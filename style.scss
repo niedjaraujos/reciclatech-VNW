@@ -25,17 +25,20 @@ header {
   justify-content: space-between;
   height: 14vh;
   align-items: center;
-  margin: 0 40px;
+  margin: 0 50px;
   border-bottom: 2px #b4aeae solid;
 
   div {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1rem;
+    img {
+      width: 46px;
+    }
 
     h1 {
       color: $grayscale700;
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
   }
 }
@@ -44,11 +47,12 @@ header .navbar {
   ul {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 
     li a {
       color: $grayscale700;
-      font-size: 1rem;
+      font-size: 1.5rem;
+      line-height: 100%;
     }
   }
 }
@@ -59,7 +63,7 @@ header .btnverde {
   cursor: pointer;
 
   .link {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: $branco;
   }
 }
@@ -72,9 +76,9 @@ main .hero {
   justify-content: space-between;
 
   .hero-title {
-    width: 900px;
+    width: 70vw;
     h2 {
-      font-size: 5rem;
+      font-size: 5.5rem;
       color: $grayscale700;
       line-height: 130%;
     }
@@ -88,7 +92,8 @@ main .hero {
     }
   }
   .logo2 {
-    width: 620px;
+    width: 740px;
+    margin-right: -70px;
   }
 }
 main .hero-title .hero-buttons {

@@ -13,17 +13,20 @@ header {
   justify-content: space-between;
   height: 14vh;
   align-items: center;
-  margin: 0 40px;
+  margin: 0 50px;
   border-bottom: 2px #b4aeae solid;
 }
 header div {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1rem;
+}
+header div img {
+  width: 46px;
 }
 header div h1 {
   color: #1f2937;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 header .navbar {
@@ -32,11 +35,12 @@ header .navbar {
 header .navbar ul {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 header .navbar ul li a {
   color: #1f2937;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  line-height: 100%;
 }
 
 header .btnverde {
@@ -46,7 +50,7 @@ header .btnverde {
   cursor: pointer;
 }
 header .btnverde .link {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #ffffff;
 }
 
@@ -58,10 +62,10 @@ main .hero {
   justify-content: space-between;
 }
 main .hero .hero-title {
-  width: 900px;
+  width: 70vw;
 }
 main .hero .hero-title h2 {
-  font-size: 5rem;
+  font-size: 5.5rem;
   color: #1f2937;
   line-height: 130%;
 }
@@ -74,7 +78,8 @@ main .hero .hero-title p {
   margin-block: 40px 80px;
 }
 main .hero .logo2 {
-  width: 620px;
+  width: 740px;
+  margin-right: -70px;
 }
 
 main .hero-title .hero-buttons {
