@@ -10,9 +10,9 @@
 }
 $branco: #ffffff;
 $corPrincipal: #f0fdf4;
-$fundoCaixas: #f3f5f8;
 $subtitulo: #4b5563;
 $titulo: #1f2937;
+$grayscale100: #f3f5f8;
 $grayscale200: #9ca3af;
 $cinzaClaro: #6b7280;
 $corPrimaria: #16a34a;
@@ -63,6 +63,23 @@ header {
   }
 }
 
-h3 {
-  margin-left: 30px;
+.databar {
+  background-color: $grayscale100;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 184px;
+
+  .databar-info {
+    text-align: center;
+    h2 {
+      color: $corPrimaria;
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+    p {
+      font-size: 1rem;
+      color: $subtitulo;
+    }
+  }
 }
