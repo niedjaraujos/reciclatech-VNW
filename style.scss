@@ -8,6 +8,17 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
+$branco: #ffffff;
+$corPrincipal: #f0fdf4;
+$fundoCaixas: #f3f5f8;
+$subtitulo: #4b5563;
+$titulo: #1f2937;
+$grayscale200: #9ca3af;
+$cinzaClaro: #6b7280;
+$corPrimaria: #16a34a;
+$corSecundaria: #21c05c;
+$darker: #09090b;
+$secondary: #2563eb;
 
 header {
   display: flex;
@@ -23,7 +34,7 @@ header {
     gap: 20px;
 
     h1 {
-      color: #1f2937;
+      color: $titulo;
       font-size: 2rem;
     }
   }
@@ -36,18 +47,22 @@ header {
     gap: 30px;
 
     li a {
-      color: #1f2937;
+      color: $titulo;
       font-size: 1rem;
     }
   }
 }
 .btnverde {
   border-radius: 10px;
-  background-color: #21c05c;
+  background-color: $corSecundaria;
   padding: 20px 40px;
 
   .link {
     font-size: 1rem;
-    color: white;
+    color: $branco;
   }
+}
+
+h3 {
+  margin-left: 30px;
 }

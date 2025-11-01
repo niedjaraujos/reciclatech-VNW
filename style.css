@@ -46,5 +46,9 @@ header div h1 {
 }
 .btnverde .link {
   font-size: 1rem;
-  color: white;
+  color: #ffffff;
+}
+
+h3 {
+  margin-left: 30px;
 }/*# sourceMappingURL=style.css.map */
