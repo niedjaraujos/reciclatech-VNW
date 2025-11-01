@@ -41,11 +41,74 @@ header .navbar ul li a {
 
 header .btnverde {
   border-radius: 10px;
-  background-color: #21c05c;
+  background-color: #16a34a;
   padding: 20px 40px;
+  cursor: pointer;
 }
 header .btnverde .link {
   font-size: 1rem;
+  color: #ffffff;
+}
+
+main .hero {
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  margin: auto;
+  justify-content: space-between;
+}
+main .hero .hero-title {
+  width: 900px;
+}
+main .hero .hero-title h2 {
+  font-size: 5rem;
+  color: #1f2937;
+  line-height: 130%;
+}
+main .hero .hero-title p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.75rem;
+  padding-right: 20px;
+  color: #4b5563;
+  line-height: 100%;
+  margin-block: 40px 80px;
+}
+main .hero .logo2 {
+  width: 620px;
+}
+
+main .hero-title .hero-buttons {
+  margin-top: 60px;
+}
+main .hero-title .hero-buttons button {
+  border-radius: 6px;
+  width: 230px;
+  height: 75px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: none;
+  margin-right: 50px;
+}
+main .hero-title .hero-buttons button img {
+  margin-left: 8px;
+  width: 26 px;
+  margin-bottom: -5px;
+}
+main .hero-title .hero-buttons .btngreen {
+  background-color: #16a34a;
+  color: #ffffff;
+  border: 1px solid #21c05c;
+}
+main .hero-title .hero-buttons .btngreen:hover {
+  background-color: #21c05c;
+}
+main .hero-title .hero-buttons .btnblue {
+  background-color: #ffffff;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+main .hero-title .hero-buttons .btnblue:hover {
+  background-color: #8cb0fc;
   color: #ffffff;
 }
 
@@ -108,18 +171,16 @@ main .howfunction .howfunction-cards .card-titulo h3 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
+main .howfunction .howfunction-cards .card-titulo .green h3 {
+  color: #16a34a;
+}
+main .howfunction .howfunction-cards .card-titulo .blue h3 {
+  color: #2563eb;
+}
 main .howfunction .howfunction-cards p {
   font-size: 1.25rem;
   color: #4b5563;
   font-family: "Poppins", sans-serif;
-}
-
-.green h3 {
-  color: #16a34a;
-}
-
-.blue h3 {
-  color: #2563eb;
 }
 
 main .howfunction-cards_card .card-list {

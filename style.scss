@@ -54,8 +54,9 @@ header .navbar {
 }
 header .btnverde {
   border-radius: 10px;
-  background-color: $corSecundaria;
+  background-color: $corPrimaria;
   padding: 20px 40px;
+  cursor: pointer;
 
   .link {
     font-size: 1rem;
@@ -63,6 +64,70 @@ header .btnverde {
   }
 }
 
+main .hero {
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  margin: auto;
+  justify-content: space-between;
+
+  .hero-title {
+    width: 900px;
+    h2 {
+      font-size: 5rem;
+      color: $grayscale700;
+      line-height: 130%;
+    }
+    p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.75rem;
+      padding-right: 20px;
+      color: $subtitulo;
+      line-height: 100%;
+      margin-block: 40px 80px;
+    }
+  }
+  .logo2 {
+    width: 620px;
+  }
+}
+main .hero-title .hero-buttons {
+  margin-top: 60px;
+  button {
+    border-radius: 6px;
+    width: 230px;
+    height: 75px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: none;
+    margin-right: 50px;
+
+    img {
+      margin-left: 8px;
+      width: 26 px;
+      margin-bottom: -5px;
+    }
+  }
+  .btngreen {
+    background-color: $corPrimaria;
+    color: $branco;
+    border: 1px solid $corSecundaria;
+
+    &:hover {
+      background-color: $corSecundaria;
+    }
+  }
+  .btnblue {
+    background-color: $branco;
+    color: $secondary;
+    border: 1px solid $secondary;
+
+    &:hover {
+      background-color: #8cb0fc;
+      color: $branco;
+    }
+  }
+}
 main .databar {
   background-color: $grayscale100;
   display: flex;
@@ -123,6 +188,12 @@ main .howfunction {
         font-family: 'Inter', sans-serif;
         font-weight: 400;
       }
+      .green h3 {
+        color: $corPrimaria;
+      }
+      .blue h3 {
+        color: $secondary;
+      }
     }
     p {
       font-size: 1.25rem;
@@ -131,12 +202,7 @@ main .howfunction {
     }
   }
 }
-.green h3 {
-  color: $corPrimaria;
-}
-.blue h3 {
-  color: $secondary;
-}
+
 main .howfunction-cards_card .card-list {
   display: flex;
   align-items: center;
