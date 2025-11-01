@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -26,45 +26,124 @@ header div h1 {
   font-size: 2rem;
 }
 
-.navbar {
+header .navbar {
   text-align: center;
 }
-.navbar ul {
+header .navbar ul {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.navbar ul li a {
+header .navbar ul li a {
   color: #1f2937;
   font-size: 1rem;
 }
 
-.btnverde {
+header .btnverde {
   border-radius: 10px;
   background-color: #21c05c;
   padding: 20px 40px;
 }
-.btnverde .link {
+header .btnverde .link {
   font-size: 1rem;
   color: #ffffff;
 }
 
-.databar {
+main .databar {
   background-color: #f3f5f8;
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 184px;
 }
-.databar .databar-info {
+main .databar .databar-info {
   text-align: center;
 }
-.databar .databar-info h2 {
+main .databar .databar-info h2 {
   color: #16a34a;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 0.75rem;
 }
-.databar .databar-info p {
-  font-size: 1rem;
+main .databar .databar-info p {
+  font-size: 1.25rem;
   color: #4b5563;
+}
+
+main .howfunction {
+  margin: 120px;
+}
+main .howfunction h2 {
+  font-size: 3.5rem;
+  color: #1f2937;
+  margin-bottom: 30px;
+}
+main .howfunction p {
+  font-size: 2.5rem;
+  color: #1f2937;
+  font-family: "Inter", sans-serif;
+}
+main .howfunction .howfunction-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 140px;
+}
+main .howfunction .howfunction-cards .howfunction-cards_card {
+  width: 700px;
+  background-color: #f3f5f8;
+  border-radius: 8px;
+  padding: 50px;
+}
+main .howfunction .howfunction-cards .card-titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0 40px;
+}
+main .howfunction .howfunction-cards .card-titulo img {
+  width: 80px;
+}
+main .howfunction .howfunction-cards .card-titulo h3 {
+  font-size: 2.5rem;
+  line-height: 150%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+main .howfunction .howfunction-cards p {
+  font-size: 1.25rem;
+  color: #4b5563;
+  font-family: "Poppins", sans-serif;
+}
+
+.green h3 {
+  color: #16a34a;
+}
+
+.blue h3 {
+  color: #2563eb;
+}
+
+main .howfunction-cards_card .card-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 60px;
+}
+main .howfunction-cards_card .card-list .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  background-color: #21c05c;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+main .howfunction-cards_card .card-list .blue {
+  background-color: #2563eb;
+}
+main .howfunction-cards_card .card-list h3 {
+  font-size: 1.25rem;
 }/*# sourceMappingURL=style.css.map */
