@@ -16,21 +16,41 @@ header {
   margin: 0 50px;
   border-bottom: 2px #b4aeae solid;
 }
-header div {
+@media (max-width: 430px) {
+  header {
+    flex-direction: column;
+    margin: 0 15px;
+    height: 10vh;
+  }
+}
+header a {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-header div img {
+header a img {
   width: 54px;
 }
-header div h1 {
+@media (max-width: 430px) {
+  header a img {
+    width: 40px;
+  }
+}
+header a h1 {
   color: #1f2937;
   font-size: 2.85rem;
+}
+header a:hover {
+  transform: scale(1.1);
 }
 
 header .navbar {
   text-align: center;
+}
+@media (max-width: 430px) {
+  header .navbar {
+    display: none;
+  }
 }
 header .navbar ul {
   display: flex;
@@ -41,6 +61,9 @@ header .navbar ul li a {
   color: #4b5563;
   font-size: 1.5rem;
   line-height: 100%;
+}
+header .navbar ul li a:hover {
+  color: #21c05c;
 }
 
 header .btnverde {
@@ -53,6 +76,9 @@ header .btnverde .link {
   font-size: 1.25rem;
   color: #ffffff;
 }
+header .btnverde:hover {
+  background-color: #21c05c;
+}
 
 main .hero {
   display: flex;
@@ -61,13 +87,30 @@ main .hero {
   margin: auto;
   justify-content: space-between;
 }
+@media (max-width: 430px) {
+  main .hero {
+    flex-direction: column;
+  }
+}
 main .hero .hero-title {
   width: 70vw;
+}
+@media (max-width: 430px) {
+  main .hero .hero-title {
+    width: 90vw;
+    margin: auto;
+  }
 }
 main .hero .hero-title h2 {
   font-size: 5.5rem;
   color: #1f2937;
   line-height: 130%;
+}
+@media (max-width: 430px) {
+  main .hero .hero-title h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
 }
 main .hero .hero-title p {
   font-family: "Inter", sans-serif;
@@ -81,9 +124,20 @@ main .hero .logo2 {
   width: 740px;
   margin-right: -70px;
 }
+@media (max-width: 430px) {
+  main .hero .logo2 {
+    width: 250px;
+    margin: auto;
+  }
+}
 
 main .hero-title .hero-buttons {
   margin-top: 60px;
+}
+@media (max-width: 430px) {
+  main .hero-title .hero-buttons {
+    margin-left: 50px;
+  }
 }
 main .hero-title .hero-buttons button {
   border-radius: 6px;
@@ -93,6 +147,11 @@ main .hero-title .hero-buttons button {
   cursor: pointer;
   border: none;
   margin-right: 50px;
+}
+@media (max-width: 430px) {
+  main .hero-title .hero-buttons button {
+    margin-bottom: 20px;
+  }
 }
 main .hero-title .hero-buttons button img {
   margin-left: 8px;
@@ -124,6 +183,13 @@ main .databar {
   justify-content: space-around;
   height: 220px;
 }
+@media (max-width: 430px) {
+  main .databar {
+    flex-wrap: wrap;
+    padding: 50px;
+    height: 500px;
+  }
+}
 main .databar .databar-info {
   text-align: center;
 }
@@ -140,26 +206,55 @@ main .databar .databar-info p {
 main .howfunction {
   margin: 120px;
 }
+@media (max-width: 430px) {
+  main .howfunction {
+    margin: 20px;
+  }
+}
 main .howfunction h2 {
   font-size: 3.5rem;
   color: #1f2937;
   margin-bottom: 30px;
+}
+@media (max-width: 430px) {
+  main .howfunction h2 {
+    font-size: 2.25rem;
+  }
 }
 main .howfunction p {
   font-size: 2.5rem;
   color: #1f2937;
   font-family: "Inter", sans-serif;
 }
+@media (max-width: 430px) {
+  main .howfunction p {
+    font-size: 2rem;
+  }
+}
 main .howfunction .howfunction-cards {
   display: flex;
   justify-content: space-between;
   margin-top: 140px;
 }
+@media (max-width: 430px) {
+  main .howfunction .howfunction-cards {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 main .howfunction .howfunction-cards .howfunction-cards_card {
-  width: 700px;
+  width: 650px;
   background-color: #f3f5f8;
   border-radius: 8px;
   padding: 50px;
+}
+@media (max-width: 430px) {
+  main .howfunction .howfunction-cards .howfunction-cards_card {
+    width: 90vw;
+    padding: 10px;
+    margin: auto;
+  }
 }
 main .howfunction .howfunction-cards .card-titulo {
   display: flex;
@@ -175,6 +270,11 @@ main .howfunction .howfunction-cards .card-titulo h3 {
   line-height: 150%;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+}
+@media (max-width: 430px) {
+  main .howfunction .howfunction-cards .card-titulo h3 {
+    font-size: 1.75rem;
+  }
 }
 main .howfunction .howfunction-cards .green h3 {
   color: #16a34a;
@@ -207,6 +307,12 @@ main .howfunction-cards_card .card-list .number {
   font-size: 1.25rem;
   font-weight: bold;
 }
+@media (max-width: 430px) {
+  main .howfunction-cards_card .card-list .number {
+    width: 40px;
+    height: 40px;
+  }
+}
 main .howfunction-cards_card .card-list .blue {
   background-color: #2563eb;
 }
@@ -221,9 +327,19 @@ main .produts {
   background-color: #f3f5f8;
   padding: 60px 100px 100px;
 }
+@media (max-width: 430px) {
+  main .produts {
+    padding: 20px;
+  }
+}
 main .produts h4 {
   font-size: 3rem;
   color: #1f2937;
+}
+@media (max-width: 430px) {
+  main .produts h4 {
+    font-size: 2rem;
+  }
 }
 main .produts p {
   font-family: "Inter", sans-serif;
@@ -231,10 +347,21 @@ main .produts p {
   color: #4b5563;
   margin: 20px 0 60px 0;
 }
+@media (max-width: 430px) {
+  main .produts p {
+    font-size: 1.5rem;
+  }
+}
 main .produts .produts-cards {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 430px) {
+  main .produts .produts-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 main .produts .produts-cards_card {
@@ -244,6 +371,13 @@ main .produts .produts-cards_card {
   border: 3px solid #16a34a;
   border-radius: 10px;
   text-align: center;
+}
+@media (max-width: 430px) {
+  main .produts .produts-cards_card {
+    width: 90vw;
+    height: 540px;
+    margin: auto;
+  }
 }
 main .produts .produts-cards_card img {
   width: 100%;
@@ -273,6 +407,9 @@ main .produts .produts-cards_card a {
   border-radius: 6px;
   font-family: "Inter", sans-serif;
 }
+main .produts .produts-cards_card a:hover {
+  background-color: #21c05c;
+}
 
 main .reviews {
   padding: 50px 30px;
@@ -282,12 +419,22 @@ main .reviews h5 {
   font-size: 3.25rem;
   color: #1f2937;
 }
+@media (max-width: 430px) {
+  main .reviews h5 {
+    font-size: 2rem;
+  }
+}
 main .reviews p {
   font-family: "Inter", sans-serif;
   font-size: 2.25rem;
   color: #4b5563;
   line-height: 150%;
   margin-block: 10px;
+}
+@media (max-width: 430px) {
+  main .reviews p {
+    font-size: 1.5rem;
+  }
 }
 
 main .reviews-cards {
@@ -296,6 +443,11 @@ main .reviews-cards {
   gap: 20px;
   margin-top: 80px;
 }
+@media (max-width: 430px) {
+  main .reviews-cards {
+    flex-direction: column;
+  }
+}
 main .reviews-cards .reviews-cards_card {
   width: 500px;
   border-radius: 8px;
@@ -303,6 +455,12 @@ main .reviews-cards .reviews-cards_card {
   border-left: 4px solid #9ca3af;
   padding: 30px 80px 30px 40px;
   text-align: left;
+}
+@media (max-width: 430px) {
+  main .reviews-cards .reviews-cards_card {
+    width: 85vw;
+    margin: auto;
+  }
 }
 main .reviews-cards .reviews-cards_card img {
   width: 200px;
@@ -339,9 +497,19 @@ main .information {
   text-align: center;
   padding: 70px;
 }
+@media (max-width: 430px) {
+  main .information {
+    padding: 20px 20px 70px 20px;
+  }
+}
 main .information h6 {
   font-size: 3rem;
   color: #000;
+}
+@media (max-width: 430px) {
+  main .information h6 {
+    font-size: 2.5rem;
+  }
 }
 main .information p {
   color: #000;
@@ -351,8 +519,23 @@ main .information p {
   width: 750px;
   margin: 20px auto;
 }
+@media (max-width: 430px) {
+  main .information p {
+    width: 90vw;
+    font-size: 1.5rem;
+  }
+}
 main .information .information-btns {
-  margin: 70px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+@media (max-width: 430px) {
+  main .information .information-btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 main .information .information-btns a {
   font-size: 1.2rem;
@@ -392,11 +575,23 @@ footer .footer-top {
   text-align: left;
   padding: 50px 0;
 }
+@media (max-width: 430px) {
+  footer .footer-top {
+    flex-direction: column;
+    padding: 50px 20px;
+    gap: 30px;
+  }
+}
 footer .footer-top h6 {
   font-size: 1.25rem;
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 30px;
+}
+@media (max-width: 430px) {
+  footer .footer-top h6 {
+    margin-bottom: 10px;
+  }
 }
 footer .footer-top p {
   font-size: 1.25rem;
@@ -416,6 +611,9 @@ footer .footer-top ul li a {
   color: #9ca3af;
   font-size: 1.25rem;
 }
+footer .footer-top ul li a:hover {
+  color: #21c05c;
+}
 
 footer .footer-top .redes {
   display: flex;
@@ -424,4 +622,7 @@ footer .footer-top .redes {
 }
 footer .footer-top .redes img {
   width: 40px;
+}
+footer .footer-top .redes img:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */
